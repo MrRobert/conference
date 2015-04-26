@@ -23,8 +23,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/crawler', function (req, res) {
-    res.status(200).json(new Object());
+app.get('/conference', function (req, res) {
+    res.render('conference');
 });
 
 console.log('Your application is running on http://localhost:' + port);

@@ -3,26 +3,29 @@
 <div id="content">
     <div class="page-header">
         <div class="container-fluid">
-            <h1>heading_title</h1>
-            <ul class="breadcrumb">
-                <li><a href="">text breadcrum</a></li>
-            </ul>
+            <h1>HD Room Viettel</h1>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6">order</div>
-            <div class="col-lg-3 col-md-3 col-sm-6">sale</div>
-            <div class="col-lg-3 col-md-3 col-sm-6">customer</div>
-            <div class="col-lg-3 col-md-3 col-sm-6">online</div>
+    <div class="container-fluid text-center">
+        <img src="img/no_video.png" />
+        <div class="row video-tool" style="background-color: #444444">
+            <a href="" class="a-video-tool"><i class="fa fa-user-plus fa-3x"></i></a>
+            <a class="a-video-tool" data-toggle="collapse" href="#commentDiv" aria-expanded="false" aria-controls="commentDiv">
+                <i class="fa fa-comments-o fa-3x"></i>
+            </a>
+            <a href="" class="a-video-tool"><i class="fa fa-microphone fa-3x"></i></a>
+            <a href="" class="a-video-tool"><i class="fa fa-video-camera fa-3x"></i></a>
+            <a href="" class="a-video-tool"><i class="fa fa-phone-square fa-3x"></i></a>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sx-12 col-sm-12">map</div>
-            <div class="col-lg-6 col-md-12 col-sx-12 col-sm-12">chart</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-sx-12">activity</div>
-            <div class="col-lg-8 col-md-12 col-sm-12 col-sx-12"> recent </div>
+        <div class="collapse" id="commentDiv" style="padding-top: 10px;">
+            <div class="row" style="padding-left: 18%;">
+                <div class="col-md-9"><textarea class="form-control" rows="3"></textarea></div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-paper-plane"></i> &nbsp; Send
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

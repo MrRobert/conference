@@ -24,7 +24,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/conference', function (req, res) {
-    res.render('conference');
+    var default_man_img = 'https://s-media-cache-ak0.pinimg.com/236x/f3/e0/6f/f3e06f799dd336b93d347077bda6f65e.jpg';
+
+    res.render('conference', {
+        man_default : default_man_img
+    });
 });
 
 console.log('Your application is running on http://localhost:' + port);

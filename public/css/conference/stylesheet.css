@@ -624,3 +624,192 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 .video-tool a {
     color: #ffffff;
 }
+
+/*
+  STYLE FROM ZING CHAT
+*/
+
+.zmchat_window.active .zmchat_popup {
+    bottom: -1px;
+}
+.zmchat_popup {
+    background-color: #fff;
+    bottom: 6px;
+    box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5), 0 2px 4px 0 rgba(184, 184, 184, 0.5);
+    position: absolute;
+    right: 0;
+    width: 290px;
+}
+.zmchat_popup .zmchat_windowtitle {
+    opacity: 0.8;
+}
+.zmchat_windowtitle {
+    background-color: #444444;
+    border-bottom: 1px solid #1168b6;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 2px 0 rgba(209, 209, 209, 0.6), 0 2px 2px 0 rgba(209, 209, 209, 0.6);
+    height: 34px;
+}
+.zmchat_window.active .zmchat_windowtitle .zmchatwintext, .zmchat_windowtitle:hover .zmchatwintext {
+    color: #fff;
+}
+.zmchat_windowtitle .zmchatwintext {
+    color: #b8d7f3;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 0 10px;
+    max-width: 190px;
+    overflow: hidden;
+    padding: 8px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.zmchat_type {
+    background-image: url("../images/chat_icons.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 2px;
+    vertical-align: -2px;
+}
+.zmchat_windowtitle .zmchatwintext .nikname {
+    color: #badcf2;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.chatmsg_stage {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #eaeaea;
+    border-color: -moz-use-text-color #bbb;
+    border-image: none;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-style: none solid;
+    border-width: 0 1px;
+    font-size: 12px;
+    padding: 0 0 0 5px;
+}
+.zmscrollableui_wrapper {
+    height: 100%;
+    outline: medium none;
+    position: relative;
+    width: 100%;
+}
+.zmscrollableui_body {
+    position: relative;
+}
+.zmchat-err, .zmchat-err-me {
+    color: #888;
+    font-style: italic;
+    padding: 5px 10px 5px 5px;
+}
+.unselectable {
+    -moz-user-select: none;
+}
+.zmscrollableui_bar {
+    bottom: 2px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 7px;
+    z-index: 1;
+}
+.zmscrollableui_gripper {
+    background-clip: content-box;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(85, 85, 85, 0.6);
+    border-radius: 7px;
+    min-height: 100px;
+    position: absolute;
+    transition: all 25ms ease 0s;
+    width: 5px;
+}
+.chatinput_box {
+    background-color: #f9f9f9;
+    border: 1px solid #bbb;
+    padding-bottom: 8px;
+}
+.zmchat-toolbar {
+    border-top: 1px solid #fff;
+    height: 16px;
+    padding: 8px;
+}
+.zmchat-emoBtn {
+    background-position: 0 -96px;
+}
+.zmchat-tbbtn {
+    cursor: pointer;
+    float: right;
+    height: 16px;
+    margin-left: 10px;
+    width: 16px;
+}
+.chateditor {
+    background-color: #fff;
+    margin: 0 8px;
+}
+.chateditor .txtinput {
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    padding: 5px;
+}
+.chateditor .txtinput textarea {
+    border: 0 none;
+    height: 22px;
+    line-height: 22px;
+    outline: medium none;
+    padding: 0;
+    resize: none;
+    width: 100%;
+}
+.clr {
+    clear: both;
+    display: block;
+    height: 0;
+}
+.unselectable {
+    -moz-user-select: none;
+}
+.zmchat_minimized {
+    bottom: -1px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+.zmchat_windowtitle {
+    background-color: #444444;
+    border-bottom: 1px solid #1168b6;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 2px 0 rgba(209, 209, 209, 0.6), 0 2px 2px 0 rgba(209, 209, 209, 0.6);
+    height: 34px;
+}
+.zmchat_minimized .zmchatwintext {
+    max-width: 125px;
+}
+.zmchat_windowtitle .zmchatwintext {
+    color: #b8d7f3;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 0 10px;
+    max-width: 190px;
+    overflow: hidden;
+    padding: 8px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#chat_popup{
+    position: fixed;
+    bottom: 0px;
+}
+#chat_mini{
+    position: fixed;
+    bottom: 0px;
+}

@@ -6,11 +6,11 @@
             <h1>HD Room Viettel</h1>
         </div>
     </div>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" style="background-image: url('img/debut_dark.png')">
         <img src="img/no_video.png" />
         <div class="row video-tool" style="background-color: #444444">
             <a href="" class="a-video-tool"><i class="fa fa-user-plus fa-3x"></i></a>
-            <a class="a-video-tool" data-toggle="collapse" href="#commentDiv" aria-expanded="false" aria-controls="commentDiv">
+            <a class="a-video-tool" data-toggle="collapse" href="#commentDiv" aria-expanded="false" aria-controls="commentDiv" onclick="$('#chat_popup').show(); $('#text_chat').focus();">
                 <i class="fa fa-comments-o fa-3x"></i>
             </a>
             <a href="" class="a-video-tool"><i class="fa fa-microphone fa-3x"></i></a>
@@ -18,9 +18,9 @@
             <a href="" class="a-video-tool"><i class="fa fa-phone-square fa-3x"></i></a>
         </div>
         <div class="collapse" id="commentDiv" style="padding-top: 10px;">
-            <div class="row" style="padding-left: 18%;">
-                <div class="col-md-9"><textarea class="form-control" rows="3"></textarea></div>
-                <div class="col-md-1">
+            <div class="row" style="min-height: 70px; padding-left: 18%;">
+                <div class="col-sm-9"><textarea style="height: 52px; resize: none;" class="form-control" rows="3"></textarea></div>
+                <div class="col-sm-1">
                     <button type="button" class="btn btn-primary">
                         <i class="fa fa-paper-plane"></i> &nbsp; Send
                     </button>
@@ -28,5 +28,6 @@
             </div>
         </div>
     </div>
+    <% include conference/popup_chat %>
 </div>
 <% include conference/footer %>

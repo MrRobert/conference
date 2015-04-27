@@ -1,0 +1,66 @@
+<div style="display:none; width: 283px;" id="chat_mini" class="zmchat_minimized unselectable pull-right" onclick="$('#chat_mini').hide(); $('#chat_popup').show();">
+    <div class="zmchat_windowtitle">
+        <span class="zmchatwintext">
+            <em class="zmchat_type white none"></em>
+            <span title="Macus" class="zmchat_fullname">Macus</span>
+        </span>
+        <a style="margin:4px;" href="#" class="pull-right" title="Close">
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+    </div>
+</div>
+<div style="display:none" class="zmchat_popup" id="chat_popup">
+    <div class="zmchat_windowtitle">
+        <a title="Macus" href="#" class="zmchatwintext">
+            <em class="zmchat_type white none"></em>
+            <span class="displayname">Macus</span>
+        </a>
+        <span style="display: none" class="new_mss" id="zmchat-popnewmsg-25647531"></span>
+        <a title="Close" style="padding: 4px;" class="pull-right" href="javascript:void(0);" onclick="$('#chat_popup').hide();">
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+        <a title="Minimize" style="padding: 4px;" class="pull-right" href="javascript:void(0);" onclick="$('#chat_popup').hide(); $('#chat_mini').show();">
+            <i class="fa fa-minus fa-2x"></i>
+        </a>
+    </div>
+    <div id="zmchat-popup-w25647531" class="chatmsg_stage" style="height:200px;">
+        <div class="zmscrollableui">
+            <div class="zmscrollableui_wrapper" tabindex="0">
+                <div class="zmscrollableui_body" style="width: 283px;">
+                    <div class="zmscrollableui_content">
+                        <div id="zmchat-popup-content-25647531">
+                            <div class="zmchat-err errcode11">Macus is offline.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zmscrollableui_bar unselectable" unselectable="on" style="visibility: hidden;">
+                <div class="zmscrollableui_gripper"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chatinput_box">
+        <div data-uid="25647531" class="zmchat-toolbar">
+            <span title="BUZZ" class="zmchat-tbbtn zmchat-buzzBtn"></span>
+            <span tabindex="-1" title="Chọn màu chữ" class="zmchat-tbbtn zmchat-fontBtn"></span>
+            <span tabindex="0" title="Mặt cười" rel="for_25647531" class="zmchat-tbbtn zmchat-emoBtn"></span>
+        </div>
+        <div class="chateditor">
+            <div class="txtinput"><em class="zmchat_icoinput"></em>
+                <textarea id="text_chat" placeholder="Nhập nội dung chat..." maxlength="200"
+                          onclick="this.focus();"
+                          tabindex="-1" id="zmchat-textAr-25647531"
+                          style="overflow-y: hidden; color: rgb(0, 0, 0); height: 22px;">
+                </textarea>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $('#text_chat').html('');
+    });
+</script>

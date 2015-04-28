@@ -12,7 +12,9 @@
                <a href="category">
                 <img class="img-circle" src="<%= lstAvatar[i] %>" style="width: 30px; height: 30px;" alt="<%=lstName[i]%>" title="<%=lstName[i]%>">
                    <%=lstName[i]%><span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-                   <span class="span_tool u_phone" href="javascript:void(0);" style="position: absolute;text-align: right;"><i class="fa fa-phone-square"></i></span>
+                   <span class="span_tool u_phone" href="javascript:void(0);" style="position: absolute;text-align: right;"
+                        data-phone-img="<%=lstAvatar[i]%>"
+                        data-phone-username="<%=lstName[i]%>"><i class="fa fa-phone-square"></i></span>
                    <span class="span_tool u_chat" href="javascript:void(0);" style="position: absolute;text-align: right; margin-left:15px;"><i class="fa fa-comments-o"></i></span>
                </a>
            </li>
@@ -73,7 +75,12 @@ $(document).ready(function(){
 
     $('#liFriend .u_phone i').click(function(event){
         event.preventDefault();
-        alert('Handle call');
+        var imgURL = $(this).closest('span').attr("data-phone-img");
+        var name = $(this).closest('span').attr("data-phone-img");
+        $('#no_video_img').hide();
+        $('#user_img').attr('src', imgURL);
+        $('#user_img').show();
+        $('#callingDiv').show();
     });
 
     $('#liUser .u_phone i').click(function(event){
@@ -86,4 +93,5 @@ $(document).ready(function(){
         $('#chat_popup').show();
     });
 });
+
 </script>

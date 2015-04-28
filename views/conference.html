@@ -6,9 +6,11 @@
             <h1>HD Room Viettel</h1>
         </div>
     </div>
-    <div class="container-fluid text-center" style="background-image: url('img/debut_dark.png')">
-        <img src="img/no_video.png" />
-        <div class="row video-tool" style="background-color: #444444">
+    <div class="container-fluid text-center" style="background-image: url('img/debut_dark.png'); min-height: 520px; position: relative;">
+        <img id="user_img" style="display:none; margin-top: 7%; height: 280px; width: 287px;" src="" class="img-circle">
+        <img id="no_video_img" src="img/no_video.png" />
+        <div id="callingDiv" style="display:none; padding-top:15px;">Calling Big daddy...</div>
+        <div class="row video-tool" style="background-color: #444444; margin-top: 15px;">
             <a href="" class="a-video-tool"><i class="fa fa-user-plus fa-3x"></i></a>
             <a class="a-video-tool" data-toggle="collapse" href="#commentDiv" aria-expanded="false" aria-controls="commentDiv" onclick="$('#chat_popup').show(); $('#text_chat').focus();">
                 <i class="fa fa-comments-o fa-3x"></i>

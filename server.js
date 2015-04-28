@@ -12,6 +12,7 @@ var port = process.env.PORT || 4000;
 
 app.listen(port);
 require('./config')(app);
+require('./default_avatar');
 
 app.get('/', function (req, res) {
 
@@ -24,11 +25,25 @@ app.get('/', function (req, res) {
 });
 
 app.get('/conference', function (req, res) {
-    var default_man_img = 'https://s-media-cache-ak0.pinimg.com/236x/f3/e0/6f/f3e06f799dd336b93d347077bda6f65e.jpg';
+    var lstAvatar = [];
+    var lstUserOnSys = [];
 
+    for(var i= 0; i < 10; i++){
+        lstAvatar.push(Default_Avatar.default_avatar[randomIntInc(0, Default_Avatar.default_avatar.length - 1)]);
+    }
+
+    for(var y= 0; y < Default_Avatar.default_avatar.length; y++){
+        lstUserOnSys.push(Default_Avatar.default_avatar[randomIntInc(0, Default_Avatar.default_avatar.length - 1)]);
+    }
     res.render('conference', {
-        man_default : default_man_img
+        lstAvatar : lstAvatar,
+        lstName : Default_Avatar.demo_name,
+        lstUserOnSys : lstUserOnSys
     });
 });
+
+function randomIntInc (low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
+}
 
 console.log('Your application is running on http://localhost:' + port);

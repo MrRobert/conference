@@ -1,91 +1,89 @@
 <ul id="menu">
-  <li class="li-menu"><a><i class="fa fa-search"></i>
+  <li id="liSearch" class="li-menu active open"><a><i class="fa fa-search"></i>
     <span>Search</span></a>
   </li>
 
   <!-- FRIEND SECTIONS -------->
-  <li class="li-menu active open"><a class="parent"><i class="fa fa-heart"></i>
+  <li id="liFriend" class="li-menu active open"><a class="parent"><i class="fa fa-heart"></i>
     <span>Friends (10)</span></a>
     <ul>
-      <li>
-        <a href="category">
-         <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-            Macus<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-        </a>
-      </li>
-      <li>
-          <a href="category">
-           <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-              Tom<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-          </a>
-      </li>
-      <li>
-        <a href="category">
-         <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-            Mary<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-        </a>
-      </li>
-      <li>
-          <a href="category">
-           <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-              Bill Gate<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-          </a>
-      </li>
-      <li>
-            <a href="category">
-             <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-                Adam<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-            </a>
-      </li>
-      <li>
-            <a href="category">
-             <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-                Big Daddy<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-            </a>
-      </li>
-      <li>
-          <a href="category">
-           <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-              Johny<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-          </a>
-      </li>
-      <li>
-        <a href="category">
-         <img class="img-circle" src="<%= man_default %>" style="width: 30px; height: 30px;" alt="Robert Duy" title="Robert Duy">
-            Djino<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
-        </a>
-      </li>
+        <% for(var i=0; i < lstAvatar.length; i++){ %>
+           <li>
+               <a href="category">
+                <img class="img-circle" src="<%= lstAvatar[i] %>" style="width: 30px; height: 30px;" alt="<%=lstName[i]%>" title="<%=lstName[i]%>">
+                   <%=lstName[i]%><span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
+                   <span class="span_tool u_phone" href="javascript:void(0);" style="position: absolute;text-align: right;"><i class="fa fa-phone-square"></i></span>
+                   <span class="span_tool u_chat" href="javascript:void(0);" style="position: absolute;text-align: right; margin-left:15px;"><i class="fa fa-comments-o"></i></span>
+               </a>
+           </li>
+        <% } %>
     </ul>
   </li>
 
   <!-- USER ON SYSTEM SECTION -------->
-  <li class="li-menu"><a class="parent"><i class="fa fa-weixin"></i>
+  <li id="liUser" class="li-menu"><a class="parent"><i class="fa fa-weixin"></i>
   <span>Users on system (100)</span></a>
     <ul>
-      <li><a href="installer">Zidance</a></li>
-      <li><a href="modification">Totti</a></li>
-      <li><a href="module">Therry Henry</a></li>
-      <li><a href="shippin">Carlos</a></li>
-      <li><a href="payment">Messi</a></li>
-      <li><a href="total">Kaka</a></li>
-      <li><a href="feed">Babarian</a></li>
+        <% for(var i=0; i < lstUserOnSys.length; i++){ %>
+           <li>
+               <a href="category">
+                <img class="img-circle" src="<%= lstUserOnSys[i] %>" style="width: 30px; height: 30px;" alt="<%=lstName[i]%>" title="<%=lstName[i]%>">
+                   <%=lstName[i]%><span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
+                   <span class="span_tool u_phone" href="javascript:void(0);" style="position: absolute;text-align: right;"><i class="fa fa-user-plus"></i></span>
+                   <span class="span_tool u_chat" href="javascript:void(0);" style="position: absolute;text-align: right; margin-left:15px;"><i class="fa fa-comments-o"></i></span>
+               </a>
+           </li>
+        <% } %>
     </ul>
   </li>
-  <li class="li-menu"><a class="parent"><i class="fa fa-life-ring"></i>
+  <li id="liSupport" class="li-menu"><a class="parent"><i class="fa fa-life-ring"></i>
   <span>Support team</span></a>
     <ul>
-      <li><a href="order">Ronney</a></li>
-      <li><a href="order_recurrin">Ronado</a></li>
-      <li><a href="return">Owen</a></li>
+      <li>
+        <a href="order">
+            <img class="img-circle" src="img/avatar_default/C7.jpeg" style="width: 30px; height: 30px;" alt="Ronado" title="Ronado">
+                 Ronado<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
+        </a>
+      </li>
+      <li>
+        <a href="order_recurrin">
+            <img class="img-circle" src="img/avatar_default/taylor.jpeg" style="width: 30px; height: 30px;" alt="Taylor" title="Taylor">
+                 Taylor<span class="pull-right"><img src="img/onlineIcon.png" style="width: 12px; height: 12px;" /></span>
+        </a>
+      </li>
     </ul>
   </li>
 </ul>
 <script type="text/javascript">
+$(document).ready(function(){
+    $('#liSearch').removeClass('active open');
+    $('#liFriend').addClass('active open');
+    $('#liUser').removeClass('active open');
+    $('#liSupport').removeClass('active open');
+
     $('.li-menu').click(function(){
-        if($(this).hasClass('active')){
-            $(this).removeClass('active open');
-        }else{
-            $(this).addClass('active open');
-        }
+        $('.li-menu').removeClass('active open');
+        $(this).addClass('active open');
     });
+    $('.span_tool i').hover(function() {
+        $(this).addClass('fa-2x');
+    }, function() {
+        $(this).removeClass('fa-2x');
+    });
+
+    $('#liFriend .u_phone i').click(function(event){
+        event.preventDefault();
+        alert('Handle call');
+    });
+
+    $('#liUser .u_phone i').click(function(event){
+        event.preventDefault();
+        alert('Handle Add Friend');
+    });
+
+    $('.u_chat').click(function(event){
+        event.preventDefault();
+        $('#chat_popup').show();
+    });
+});
 </script>
